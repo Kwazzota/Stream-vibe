@@ -1,38 +1,40 @@
-import Section from "@/layouts/Section"
 import Grid from "@/components/Grid";
 import DeviceCard from "@/components/DeviceCard";
+import Section from "@/layouts/Section";
 
 const Devices = () => {
+    const baseUrl = import.meta.env.BASE_URL; // Получаем базовый путь (/Stream-vibe/)
+
     const deviceItems = [
         {
             title: 'Smartphones',
             description: 'StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store',
-            imgSrc: '/devices/1.svg',
+            imgSrc: `${baseUrl}devices/1.svg`,
         },
         {
             title: 'Tablet',
             description: 'StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store',
-            imgSrc: '/devices/2.svg',
+            imgSrc: `${baseUrl}devices/2.svg`,
         },
         {
             title: 'Smart TV',
             description: 'StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store',
-            imgSrc: '/devices/3.svg',
+            imgSrc: `${baseUrl}devices/3.svg`,
         },
         {
             title: 'Laptops',
             description: 'StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store',
-            imgSrc: '/devices/4.svg',
+            imgSrc: `${baseUrl}devices/4.svg`,
         },
         {
             title: 'Gaming Consoles',
             description: 'StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store',
-            imgSrc: '/devices/5.svg',
+            imgSrc: `${baseUrl}devices/5.svg`,
         },
         {
             title: 'VR Headsets ',
             description: 'StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store',
-            imgSrc: '/devices/6.svg',
+            imgSrc: `${baseUrl}devices/6.svg`,
         },
     ]
 

@@ -16,7 +16,7 @@ const Hero = () => {
                         title={playButtonTitle}
                     >
                         <img
-                            src="/play.svg"
+                            src={`${import.meta.env.BASE_URL}play.svg`}
                             alt=""
                             className="hero__play-button-image"
                             width={470}

@@ -8,113 +8,40 @@ import Icon from "@/components/Icon";
 import Tags from "@/components/Tags";
 import Ratings from "@/components/Ratings";
 
+// Хелпер для путей
+const getAssetUrl = (path) => new URL(path, import.meta.url).href;
+
 const MovieDetails = (props) => {
-
-    const {
-        seasons
-    } = props
-
+    const { seasons } = props
     const titleId = 'movie-details-title'
     const castSliderNavigationId = 'movie-cast-slider-navigation'
 
     const castItems = [
-        {
-            imgSrc: '/src/assets/images/people/cast.jpg',
-            imgAlt: 'Ivan Ivanov',
-        },
-        {
-            imgSrc: '/src/assets/images/people/cast.jpg',
-            imgAlt: 'Ivan Ivanov',
-        },
-        {
-            imgSrc: '/src/assets/images/people/cast.jpg',
-            imgAlt: 'Ivan Ivanov',
-        },
-        {
-            imgSrc: '/src/assets/images/people/cast.jpg',
-            imgAlt: 'Ivan Ivanov',
-        },
-        {
-            imgSrc: '/src/assets/images/people/cast.jpg',
-            imgAlt: 'Ivan Ivanov',
-        },
-        {
-            imgSrc: '/src/assets/images/people/cast.jpg',
-            imgAlt: 'Ivan Ivanov',
-        },
-        {
-            imgSrc: '/src/assets/images/people/cast.jpg',
-            imgAlt: 'Ivan Ivanov',
-        },
-        {
-            imgSrc: '/src/assets/images/people/cast.jpg',
-            imgAlt: 'Ivan Ivanov',
-        },
-        {
-            imgSrc: '/src/assets/images/people/cast.jpg',
-            imgAlt: 'Ivan Ivanov',
-        },
+        { imgSrc: getAssetUrl('../assets/images/people/cast.jpg'), imgAlt: 'Ivan Ivanov' },
+        { imgSrc: getAssetUrl('../assets/images/people/cast.jpg'), imgAlt: 'Ivan Ivanov' },
+        { imgSrc: getAssetUrl('../assets/images/people/cast.jpg'), imgAlt: 'Ivan Ivanov' },
+        { imgSrc: getAssetUrl('../assets/images/people/cast.jpg'), imgAlt: 'Ivan Ivanov' },
+        { imgSrc: getAssetUrl('../assets/images/people/cast.jpg'), imgAlt: 'Ivan Ivanov' },
+        { imgSrc: getAssetUrl('../assets/images/people/cast.jpg'), imgAlt: 'Ivan Ivanov' },
+        { imgSrc: getAssetUrl('../assets/images/people/cast.jpg'), imgAlt: 'Ivan Ivanov' },
+        { imgSrc: getAssetUrl('../assets/images/people/cast.jpg'), imgAlt: 'Ivan Ivanov' },
+        { imgSrc: getAssetUrl('../assets/images/people/cast.jpg'), imgAlt: 'Ivan Ivanov' },
     ]
 
     const reviewItems = [
-        {
-            name: 'Aniket Roy',
-            subtitle: 'From India',
-            description: 'This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn’t watch it.',
-            ratingValue: 4.5,
-        },
-        {
-            name: 'Aniket Roy',
-            subtitle: 'From India',
-            description: 'This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn’t watch it.',
-            ratingValue: 4.5,
-        },
-        {
-            name: 'Aniket Roy',
-            subtitle: 'From India',
-            description: 'This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn’t watch it.',
-            ratingValue: 4.5,
-        },
-        {
-            name: 'Aniket Roy',
-            subtitle: 'From India',
-            description: 'This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn’t watch it.',
-            ratingValue: 4.5,
-        },
-        {
-            name: 'Aniket Roy',
-            subtitle: 'From India',
-            description: 'This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn’t watch it.',
-            ratingValue: 4.5,
-        },
-        {
-            name: 'Aniket Roy',
-            subtitle: 'From India',
-            description: 'This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn’t watch it.',
-            ratingValue: 4.5,
-        },
-        {
-            name: 'Aniket Roy',
-            subtitle: 'From India',
-            description: 'This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn’t watch it.',
-            ratingValue: 4.5,
-        },
-        {
-            name: 'Aniket Roy',
-            subtitle: 'From India',
-            description: 'This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn’t watch it.',
-            ratingValue: 4.5,
-        },
+        { name: 'Aniket Roy', subtitle: 'From India', description: 'This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn’t watch it.', ratingValue: 4.5 },
+        { name: 'Aniket Roy', subtitle: 'From India', description: 'This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn’t watch it.', ratingValue: 4.5 },
+        { name: 'Aniket Roy', subtitle: 'From India', description: 'This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn’t watch it.', ratingValue: 4.5 },
+        { name: 'Aniket Roy', subtitle: 'From India', description: 'This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn’t watch it.', ratingValue: 4.5 },
+        { name: 'Aniket Roy', subtitle: 'From India', description: 'This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn’t watch it.', ratingValue: 4.5 },
+        { name: 'Aniket Roy', subtitle: 'From India', description: 'This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn’t watch it.', ratingValue: 4.5 },
+        { name: 'Aniket Roy', subtitle: 'From India', description: 'This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn’t watch it.', ratingValue: 4.5 },
+        { name: 'Aniket Roy', subtitle: 'From India', description: 'This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn’t watch it.', ratingValue: 4.5 },
     ]
 
     return (
-        <section
-            className="movie-details container"
-            aria-labelledby={titleId}
-        >
-            <h2 className="visually-hidden" id={titleId}>
-                Detailed movie information
-            </h2>
+        <section className="movie-details container" aria-labelledby={titleId}>
+            <h2 className="visually-hidden" id={titleId}>Detailed movie information</h2>
             <div className="movie-details__main">
                 {seasons && (
                     <div className="movie-details__panel movie-details__panel--seasons">
@@ -134,15 +61,8 @@ const MovieDetails = (props) => {
                 </div>
                 <div className="movie-details__panel">
                     <header className="movie-details__panel-header">
-                        <h3 className="movie-details__title">
-                            Cast
-                        </h3>
-                        <SliderNavigation
-                            id={castSliderNavigationId}
-                            hasPagination={false}
-                            mode="rounded"
-                            buttonMode="black-08"
-                        />
+                        <h3 className="movie-details__title">Cast</h3>
+                        <SliderNavigation id={castSliderNavigationId} hasPagination={false} mode="rounded" buttonMode="black-08" />
                     </header>
                     <Slider
                         navigationTargetElementId={castSliderNavigationId}
@@ -150,23 +70,11 @@ const MovieDetails = (props) => {
                         sliderParams={{
                             spaceBetween: 10,
                             breakpoints: {
-                                0: {
-                                    slidesPerView: 4,
-                                },
-                                441: {
-                                    slidesPerView: 5,
-                                },
-                                646: {
-                                    slidesPerView: 6,
-                                },
-                                800: {
-                                    slidesPerView: 7,
-                                },
-                                1024: {
-                                    slidesPerView: 8,
-                                    spaceBetween: 20,
-                                    allowTouchMove: false,
-                                },
+                                0: { slidesPerView: 4 },
+                                441: { slidesPerView: 5 },
+                                646: { slidesPerView: 6 },
+                                800: { slidesPerView: 7 },
+                                1024: { slidesPerView: 8, spaceBetween: 20, allowTouchMove: false },
                             },
                         }}
                     >
@@ -177,15 +85,8 @@ const MovieDetails = (props) => {
                 </div>
                 <div className="movie-details__panel movie-details__panel--large-gap-y">
                     <header className="movie-details__panel-header">
-                        <h3 className="movie-details__title">
-                            Reviews
-                        </h3>
-                        <Button
-                            mode="black-08"
-                            iconName="plus"
-                            label="Add Your Review"
-                            href="/"
-                        />
+                        <h3 className="movie-details__title">Reviews</h3>
+                        <Button mode="black-08" iconName="plus" label="Add Your Review" href="/" />
                     </header>
                     <Slider
                         navigationMode="rounded"
@@ -195,17 +96,8 @@ const MovieDetails = (props) => {
                             slidesPerView: 2,
                             slidesPerGroup: 2,
                             breakpoints: {
-                                0: {
-                                    slidesPerView: 1,
-                                    slidesPerGroup: 1,
-                                    spaceBetween: 16,
-                                },
-                                1024: {
-                                    slidesPerView: 2,
-                                    slidesPerGroup: 2,
-                                    allowTouchMove: false,
-                                    spaceBetween: 20,
-                                },
+                                0: { slidesPerView: 1, slidesPerGroup: 1, spaceBetween: 16 },
+                                1024: { slidesPerView: 2, slidesPerGroup: 2, allowTouchMove: false, spaceBetween: 20 },
                             },
                         }}
                     >
@@ -219,63 +111,28 @@ const MovieDetails = (props) => {
                 <div className="movie-details__panel">
                     <div className="movie-details__groups">
                         <div className="movie-details__group">
-                            <h3 className="movie-details__title">
-                                <Icon name="calendar" />
-                                <span>Released Year</span>
-                            </h3>
-                            <div className="movie-details__description">
-                                <time className="h6" dateTime="2022">2022</time>
-                            </div>
+                            <h3 className="movie-details__title"><Icon name="calendar" /><span>Released Year</span></h3>
+                            <div className="movie-details__description"><time className="h6" dateTime="2022">2022</time></div>
                         </div>
                         <div className="movie-details__group">
-                            <h3 className="movie-details__title">
-                                <Icon name="translate" />
-                                <span>Available Languages</span>
-                            </h3>
-                            <Tags
-                                items={['English', 'Hindi', 'Tamil', 'Telegu', 'Kannada']}
-                            />
+                            <h3 className="movie-details__title"><Icon name="translate" /><span>Available Languages</span></h3>
+                            <Tags items={['English', 'Hindi', 'Tamil', 'Telegu', 'Kannada']} />
                         </div>
                         <div className="movie-details__group">
-                            <h3 className="movie-details__title">
-                                <Icon name="stars" />
-                                <span>Ratings</span>
-                            </h3>
-                            <Ratings
-                                items = {[
-                                    {title: 'IMDb', ratingValue: 4.5},
-                                    {title: 'Stream Vibe', ratingValue: 4},
-                                ]}
-                            />
+                            <h3 className="movie-details__title"><Icon name="stars" /><span>Ratings</span></h3>
+                            <Ratings items={[{title: 'IMDb', ratingValue: 4.5}, {title: 'Stream Vibe', ratingValue: 4}]} />
                         </div>
                         <div className="movie-details__group">
-                            <h3 className="movie-details__title">
-                                <Icon name="genres" />
-                                <span>Genres</span>
-                            </h3>
-                            <Tags
-                                items={['Action', 'Adventure']}
-                            />
+                            <h3 className="movie-details__title"><Icon name="genres" /><span>Genres</span></h3>
+                            <Tags items={['Action', 'Adventure']} />
                         </div>
                         <div className="movie-details__group">
-                            <h3 className="movie-details__title">
-                                Director
-                            </h3>
-                            <PersonCard
-                                name="Rishab Shetty"
-                                subtitle="From India"
-                                imgSrc="/src/assets/images/people/director.jpg"
-                            />
+                            <h3 className="movie-details__title">Director</h3>
+                            <PersonCard name="Rishab Shetty" subtitle="From India" imgSrc={getAssetUrl('../assets/images/people/director.jpg')} />
                         </div>
                         <div className="movie-details__group">
-                            <h3 className="movie-details__title">
-                                Music
-                            </h3>
-                            <PersonCard
-                                name="B. Ajaneesh Loknath"
-                                subtitle="From India"
-                                imgSrc="/src/assets/images/people/music.jpg"
-                            />
+                            <h3 className="movie-details__title">Music</h3>
+                            <PersonCard name="B. Ajaneesh Loknath" subtitle="From India" imgSrc={getAssetUrl('../assets/images/people/music.jpg')} />
                         </div>
                     </div>
                 </div>

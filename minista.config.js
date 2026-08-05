@@ -2,8 +2,7 @@ import { defineConfig } from 'minista'
 import path from 'path'
 
 export default defineConfig({
-  root: '',
-  base: '/',
+  base: "/Stream-vibe/",
   public: 'public',
   out: 'dist',
   assets: {
@@ -13,20 +12,7 @@ export default defineConfig({
       outDir: 'assets/images',
       outName: '[name]',
       remoteName: 'remote',
-      optimize: {
-        layout: 'constrained',
-        breakpoints: [
-          320, 400, 640, 800, 1024, 1280, 1440, 1920, 2560, 2880, 3840,
-        ],
-        resolution: [1, 2],
-        format: 'inherit',
-        formatOptions: {},
-        quality: undefined,
-        aspect: undefined,
-        background: undefined,
-        fit: 'cover',
-        position: 'centre',
-      },
+      optimize: false,
     },
     svgr: {
       svgrOptions: {},

@@ -1,5 +1,7 @@
 import MoviesBannerCard from "@/components/MoviesBannerCard";
 
+const getAssetUrl = (path) => new URL(path, import.meta.url).href;
+
 const ShowBanner = () => {
     const titleId = 'show-banner-title'
 
@@ -13,7 +15,7 @@ const ShowBanner = () => {
                 titleId={titleId}
                 TitleTag="h1"
                 description="When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl."
-                imgSrc="/src/assets/images/movie-banner/3.jpg"
+                imgSrc={getAssetUrl('../assets/images/movie-banner/3.jpg')}
                 isSmallPaddingY
             />
         </section>

@@ -25,7 +25,7 @@ const Support = () => {
             </div>
             <Image
                 className="support__image"
-                src='/src/assets/images/support/1.png'
+                src='Stream-vibe/src/assets/images/support/1.png'
             />
           </div>
           <form className="support__form" action="">

@@ -2,6 +2,9 @@ import './MoviesBanner.scss'
 import Slider from "../../components/Slider";
 import MoviesBannerCard from "../../components/MoviesBannerCard";
 
+// Хелпер для путей
+const getAssetUrl = (path) => new URL(path, import.meta.url).href;
+
 const MoviesBanner = () => {
     const titleId = 'movies-banner-title'
 
@@ -9,22 +12,22 @@ const MoviesBanner = () => {
         {
             title: 'Avengers : Endgame',
             description: 'With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos\'s actions and undo the chaos to the universe, no matter what consequences may be in store, and no matter who they face... Avenge the fallen.',
-            imgSrc: '/src/assets/images/movie-banner/1.jpg',
+            imgSrc: getAssetUrl('../assets/images/movie-banner/1.jpg'),
         },
         {
             title: 'Avengers : Endgame 2',
             description: 'With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos\'s actions and undo the chaos to the universe, no matter what consequences may be in store, and no matter who they face... Avenge the fallen.',
-            imgSrc: '/src/assets/images/movie-banner/1.jpg',
+            imgSrc: getAssetUrl('../assets/images/movie-banner/1.jpg'),
         },
         {
             title: 'Avengers : Endgame 3',
             description: 'With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos\'s actions and undo the chaos to the universe, no matter what consequences may be in store, and no matter who they face... Avenge the fallen.',
-            imgSrc: '/src/assets/images/movie-banner/1.jpg',
+            imgSrc: getAssetUrl('../assets/images/movie-banner/1.jpg'),
         },
         {
             title: 'Avengers : Endgame 4',
             description: 'With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos\'s actions and undo the chaos to the universe, no matter what consequences may be in store, and no matter who they face... Avenge the fallen.',
-            imgSrc: '/src/assets/images/movie-banner/1.jpg',
+            imgSrc: getAssetUrl('../assets/images/movie-banner/1.jpg'),
         },
     ]
 
